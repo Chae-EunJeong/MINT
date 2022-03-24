@@ -1,13 +1,31 @@
 import React, { useState } from 'react'
 import tempBg from '../images/concert_bg.png'
 import { Box, Button, Typography } from '@mui/material'
-import MintPageTemplate from '../components/common/MintPageTemplate'
 import MintConcertTimes from '../components/concert/MintConcertTimes'
 import MintBtnGroup from '../components/common/MintBtnGroup'
 
 function MintConcertDate() {
-  const Header = () => {
-    return (
+  const [tourName, settourName] = useState('BTS WORLD TOUR')
+  const [concertName, setConcertName] = useState("LOVE YOL'RSELF")
+  const [concertInfo, setConcertInfo] = useState({
+    status: 'true',
+    code: 'number',
+    title: 'string',
+    artist: 'string',
+    place: 'string',
+    times: [{ date: '12:00' }, { date: '15:00' }, { date: '18:00' }, { date: '20:00' }],
+  })
+  const [isSelected, setIsSelected] = useState(false)
+  const [selectedId, setSelectedId] = useState(0)
+
+  const pickTime = (time, idx) => {
+    // console.log(time, idx)
+    setIsSelected(true)
+    setSelectedId(idx)
+  }
+
+  return (
+    <Box>
       <Box
         sx={{
           textAlign: 'center',
@@ -20,11 +38,7 @@ function MintConcertDate() {
         </Typography>
         <Typography>{concertName}</Typography>
       </Box>
-    )
-  }
-  const Contents = () => {
-    return (
-      <Box>
+      <Box sx={{ maxHeight: '180px', overflow: 'scroll' }}>
         {concertInfo.times.map((time, idx) => (
           <MintConcertTimes
             key={time + idx}
@@ -35,31 +49,9 @@ function MintConcertDate() {
           />
         ))}
       </Box>
-    )
-  }
-  const Footer = () => {
-    return <MintBtnGroup next="concert/area" />
-  }
-  const [tourName, settourName] = useState('BTS WORLD TOUR')
-  const [concertName, setConcertName] = useState("LOVE YOL'RSELF")
-  const [concertInfo, setConcertInfo] = useState(tempdatas)
-  const [isSelected, setIsSelected] = useState(false)
-  const [selectedId, setSelectedId] = useState(0)
-
-  const pickTime = (time, idx) => {
-    setIsSelected(true)
-    setSelectedId(idx)
-  }
-  return <MintPageTemplate header={<Header />} contents={<Contents />} footer={<Footer />} />
-}
-
-const tempdatas = {
-  status: 'true',
-  code: 'number',
-  title: 'string',
-  artist: 'string',
-  place: 'string',
-  times: [{ date: '12:00' }, { date: '15:00' }, { date: '18:00' }, { date: '20:00' }],
+      <MintBtnGroup next="concert/area" />
+    </Box>
+  )
 }
 
 export default MintConcertDate
