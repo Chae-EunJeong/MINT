@@ -114,10 +114,10 @@
 ![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/68576770/162354522-240469f4-53f9-4353-9c40-a93f7024b2ec.gif)
 
 #### 내가 가진 NFT 티켓 목록 조회
-![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/68576770/162354248-f758ad7d-966a-4e2e-b05f-ca301e2d9e21.gif)
+![ezgif com-gif-maker (5)](https://user-images.githubusercontent.com/68576770/162356800-1c48a0d2-b4cc-4003-9d4f-0059a0a5b56f.gif)
 
 #### 거래 가능한 NFT 티켓 구매
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/68576770/162353826-63004c0d-5cb7-4bab-ae4d-27ee6235f379.gif)
+![ezgif com-gif-maker (4)](https://user-images.githubusercontent.com/68576770/162356291-e5193584-5495-4ee1-8ecb-1a5ff53b175a.gif)
 
 #### 거래 가능한 NFT 티켓 목록
 ![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/68576770/162354923-2828d970-4293-46ec-8e7a-0e6bfbe7f9e6.gif)
