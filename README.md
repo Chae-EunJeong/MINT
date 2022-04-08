@@ -108,17 +108,25 @@
 ## 🎥 MINT 서비스 화면
 ---
 #### 콘서트 예매
+![ezgif com-gif-maker (3)](https://user-images.githubusercontent.com/68576770/162355196-9a0419ce-585d-4136-bc74-f3c439a55ca9.gif)
 
-#### 3D NFT 티켓 조회
+#### 3D NFT 티켓 조회(콘서트 시작 전)
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/68576770/162354522-240469f4-53f9-4353-9c40-a93f7024b2ec.gif)
 
-#### NFT 티켓 목록 조회
+#### 내가 가진 NFT 티켓 목록 조회
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/68576770/162354248-f758ad7d-966a-4e2e-b05f-ca301e2d9e21.gif)
 
-#### 거래 가능한 NFT 포토카드 목록
+#### 거래 가능한 NFT 티켓 구매
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/68576770/162353826-63004c0d-5cb7-4bab-ae4d-27ee6235f379.gif)
 
-#### 지갑 연동
+#### 거래 가능한 NFT 티켓 목록
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/68576770/162354923-2828d970-4293-46ec-8e7a-0e6bfbe7f9e6.gif)
 
 #### 메인 화면(콘서트 목록)
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/68576770/162354815-35f52890-18fd-41b7-ab94-8adab91fbc20.gif)
 
+#### 지갑 연동
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/68576770/162354725-51c77048-37a3-4807-9898-f57ce8866967.gif)
 
 <br />
 
