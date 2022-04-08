@@ -9,6 +9,7 @@ import MintCollectionSingleSkeletion from '../skeleton/MintCollectionSingleSkele
 
 export default function MintCard2({ tokenId }) {
   const [tokenURI, setTokenURI] = useState(null)
+  console.log(tokenURI)
   const navigate = useNavigate()
   const showTicket = () => {
     navigate(`/mypage/ticket`, { state: { ...tokenURI.data, tokenId } })
@@ -40,7 +41,12 @@ export default function MintCard2({ tokenId }) {
             <>
               <CardMedia
                 component="img"
-                image={JSON.parse(tokenURI.data.img).gif}
+                // image={JSON.parse(tokenURI.data.img).gif}
+                image={
+                  new Date(`${tokenURI.data.date} ${tokenURI.data.time}`) >= new Date()
+                    ? '/default.gif'
+                    : JSON.parse(tokenURI.data.img).gif
+                }
                 alt="nft사진"
                 sx={{ height: '175px' }}
               />
