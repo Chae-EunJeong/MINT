@@ -59,7 +59,8 @@ export default function MintTradeContents() {
               item
               key={`${tokenURI.tokenId}-${tokenURI.contractAddress}`}
               xs={4}
-              sx={{ width: '33.33%', height: '200px', borderRadius: '5px' }}>
+              columns={{ xs: 12 }}
+              sx={{ width: '33.33%', height: '200px', borderRadius: '5px', marginBottom: '12px' }}>
               <MintCard tokenURI={tokenURI} />
               {/* <Button onClick={}></Button> */}
             </Grid>
