@@ -35,7 +35,17 @@ export default function MintSoonContents() {
       {notOpenConcerts.length === 0
         ? [0, 0, 0, 0, 0].map((v, i) => <MintHorizontalSkeleton key={i} notOpen={false} />)
         : notOpenConcerts.map(concert => (
-            <MintHorizontalCard key={concert.id} concertData={concert} passDetail={handleNaviation} />
+            <MintHorizontalCard
+              key={concert.id}
+              concertData={{
+                ...concert,
+                isOpen:
+                  new Date(concert.startDate.slice(0, 10)) <= new Date() &&
+                  new Date(concert.endDate.slice(0, 10)) >= new Date(),
+                isBefore: new Date(concert.startDate.slice(0, 10)) > new Date(),
+              }}
+              passDetail={handleNaviation}
+            />
           ))}
     </Box>
   )

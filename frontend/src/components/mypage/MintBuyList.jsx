@@ -47,7 +47,13 @@ export default function MintBuyList({ contractList, loading }) {
             contractList.map((concert, index) => (
               <MintHorizontalCard
                 key={`${concert.id}-${concert.startDate}-${index}`}
-                concertData={concert}
+                concertData={{
+                  ...concert,
+                  isOpen:
+                    new Date(concert.startDate.slice(0, 10)) <= new Date() &&
+                    new Date(concert.endDate.slice(0, 10)) >= new Date(),
+                  isBefore: new Date(concert.startDate.slice(0, 10)) > new Date(),
+                }}
                 passDetail={handleNavigation}>
                 <Button
                   variant="outlined"
