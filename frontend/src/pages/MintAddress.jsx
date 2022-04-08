@@ -19,7 +19,7 @@ export default function MintConnectWallet() {
     if (address.length === 42 && address.startsWith('0x')) {
       sessionStorage.setItem('address', address)
       confirmMessage('아래의 주소로 연결하시겠습니까?', address, displayCheck, bright)
-    } else errorMessage('유효하지 않은 지갑 주소 입니다', bright)
+    } else errorMessage('유효하지 않은 지갑 주소 입니다', null, null, bright)
   }
 
   return (
