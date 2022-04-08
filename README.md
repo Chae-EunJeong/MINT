@@ -275,4 +275,11 @@ npm run start
 ### Back-end
 ```bash
 
+gradlew.bat 파일 실행
+
+radlew clean build 
+
+build/libs 폴더로 이동
+
+java -jar backend-0.0.1-SNAPSHOT.jar
 ```
