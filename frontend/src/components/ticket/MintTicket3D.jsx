@@ -9,7 +9,10 @@ function MintTicket3D({ concertData }) {
     const group = useRef()
     const { nodes, materials } = useGLTF('/mintticket3.glb')
 
-    const src = JSON.parse(concertData.img).mp4
+    const src =
+      new Date(`${concertData.date} ${concertData.time}`) >= new Date()
+        ? '/default.mp4'
+        : JSON.parse(concertData.img).mp4
 
     const [video] = useState(() =>
       Object.assign(document.createElement('video'), {
@@ -18,14 +21,11 @@ function MintTicket3D({ concertData }) {
         autoPlay: true,
         loop: true,
         muted: true,
-        // offset: { x: 1, y: 1 },
       }),
     )
     const texture = Object.assign(new THREE.VideoTexture(video), { offset: { x: 0.2, y: 0 } })
 
-    // useEffect(() => video.play(), [video])
-    useEffect(() => video.play())
-    const date = new Date()
+    useEffect(() => video.play(), [video])
 
     return (
       <group ref={group} {...concertData} dispose={null}>
