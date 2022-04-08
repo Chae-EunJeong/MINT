@@ -7,7 +7,6 @@ import removeUnderBar from '../../functions/util/removeUnderBar'
 
 export default function MintHorizontalCard({ concertData, passDetail, children }) {
   const navigate = useNavigate()
-
   return (
     <Box
       sx={{
@@ -22,7 +21,7 @@ export default function MintHorizontalCard({ concertData, passDetail, children }
         <MintConcertPoster imgUrl={`${BASE_URL}${concertData.poster ? concertData.poster : concertData.thumnailUrl}`} />
       </Box>
       <Box sx={{ width: '100px', flex: '1 auto', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-        <Typography
+        {/* <Typography
           sx={{
             display: 'inline-block',
             backgroundColor: concertData.isBefore ? '#DECAEB' : concertData.isOpen ? '#8811dd' : '#ddd',
@@ -32,7 +31,7 @@ export default function MintHorizontalCard({ concertData, passDetail, children }
             fontSize: '12px',
           }}>
           {concertData.isBefore ? 'soon' : concertData.isOpen ? 'open' : 'closed'}
-        </Typography>
+        </Typography> */}
         <MintConcertText
           // 콘서트 데이터 artists, artist 통일필요
           data={{
