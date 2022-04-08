@@ -122,11 +122,17 @@
 #### 거래 가능한 NFT 티켓 목록
 ![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/68576770/162354923-2828d970-4293-46ec-8e7a-0e6bfbe7f9e6.gif)
 
+#### 예매한 콘서트 취소
+![ezgif com-gif-maker (6)](https://user-images.githubusercontent.com/68576770/162358907-acfd92a2-0671-437b-b55d-f0363f340f41.gif)
+
 #### 메인 화면(콘서트 목록)
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/68576770/162354815-35f52890-18fd-41b7-ab94-8adab91fbc20.gif)
 
 #### 지갑 연동
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/68576770/162354725-51c77048-37a3-4807-9898-f57ce8866967.gif)
+
+#### 외부 앱(SSAFY WALLET) 이용 방법 안내
+![ezgif com-gif-maker (7)](https://user-images.githubusercontent.com/68576770/162359230-266e4d7e-b5f7-496d-a1db-7b12a699da30.gif)
 
 <br />
 
